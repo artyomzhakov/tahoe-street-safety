@@ -434,3 +434,88 @@ section {
     margin: 0 auto;
     line-height: 1.6;
 }
+/* Mobile layout */
+@media (max-width: 700px) {
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    /* Main content */
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    /* Hero sections */
+    .hero,
+    .work-hero,
+    .involve-hero,
+    .map-hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1,
+    .work-hero h1,
+    .involve-hero h1,
+    .map-hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p,
+    .work-hero p,
+    .involve-hero p,
+    .map-hero p {
+        font-size: 17px;
+    }
+
+    /* Three-column layouts become one column */
+    .why-cards,
+    .focus-cards,
+    .map-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .why-cards {
+        display: grid;
+    }
+
+    /* Two-column layouts become one column */
+    .goal-list,
+    .involve-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Work steps */
+    .work-step {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* General sections */
+    section {
+        padding: 20px;
+    }
+
+    /* Buttons */
+    .button {
+        padding: 12px 20px;
+    }
+}
