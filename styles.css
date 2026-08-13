@@ -519,3 +519,8 @@ section {
         padding: 12px 20px;
     }
 }
+@media (max-width: 700px) {
+    body {
+        background-color: red !important;
+    }
+}
