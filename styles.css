@@ -1,0 +1,436 @@
+/* Overall page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #1f3a4d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #162b38;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #dce8ed;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1f3a4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #31566d;
+}
+
+.why {
+    text-align: center;
+}
+
+.why h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.why > p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.why-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.why-card {
+    flex: 1;
+    background-color: #eef3f5;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.why-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.why-card p {
+    line-height: 1.5;
+}
+.goals {
+    text-align: center;
+}
+
+.goals h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.goals-intro {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.goal-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.goal {
+    padding: 25px;
+    background-color: #eef3f5;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.goal h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.goal p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.work-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dce8ed;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.work-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.work-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+
+.work-steps {
+    margin-bottom: 40px;
+}
+
+.work-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: #eef3f5;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.step-number {
+    min-width: 40px;
+    height: 40px;
+    background-color: #1f3a4d;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.work-step h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.work-step p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.work-focus {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.focus-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.focus-card {
+    background-color: #eef3f5;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.focus-card h3 {
+    margin-top: 0;
+}
+
+.focus-card p {
+    line-height: 1.5;
+}
+
+.work-future {
+    text-align: center;
+    background-color: #dce8ed;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.work-future p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.involve-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dce8ed;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.involve-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.involve-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.involve-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.involve-intro h2,
+.involve-report h2,
+.involve-ways h2,
+.involve-future h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.involve-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.involve-report {
+    text-align: center;
+    background-color: #eef3f5;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.involve-report p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.involve-report .button {
+    margin-top: 15px;
+}
+
+.involve-ways {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.involve-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.involve-card {
+    background-color: #eef3f5;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.involve-card h3 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.involve-card p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.involve-future {
+    text-align: center;
+    background-color: #dce8ed;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.involve-future p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.map-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dce8ed;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.map-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.map-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.map-coming-soon {
+    text-align: center;
+    background-color: #eef3f5;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.map-coming-soon h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.map-coming-soon p {
+    max-width: 750px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.map-coming-soon .button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.map-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.map-info h2,
+.map-note h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.map-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.map-card {
+    background-color: #eef3f5;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.map-card h3 {
+    margin-top: 0;
+}
+
+.map-card p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.map-note {
+    text-align: center;
+    background-color: #dce8ed;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.map-note p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
