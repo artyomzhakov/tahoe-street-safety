@@ -435,36 +435,31 @@ section {
     line-height: 1.6;
 }
 /* Mobile layout */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 
-    /* Navigation */
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        padding: 15px;
     }
 
     nav a {
         margin: 0;
     }
 
-    /* Main content */
     main {
         margin: 20px auto;
         padding: 0 15px;
     }
 
-    /* Headings */
-    h1 {
-        font-size: 32px;
+    section {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 25px 20px;
     }
 
-    h2 {
-        font-size: 26px;
-    }
-
-    /* Hero sections */
     .hero,
     .work-hero,
     .involve-hero,
@@ -476,7 +471,7 @@ section {
     .work-hero h1,
     .involve-hero h1,
     .map-hero h1 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .hero p,
@@ -486,41 +481,29 @@ section {
         font-size: 17px;
     }
 
-    /* Three-column layouts become one column */
     .why-cards,
-    .focus-cards,
-    .map-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .why-cards {
-        display: grid;
-    }
-
-    /* Two-column layouts become one column */
     .goal-list,
-    .involve-cards {
+    .focus-cards,
+    .involve-cards,
+    .map-cards {
+        display: grid;
         grid-template-columns: 1fr;
-    }
-
-    /* Work steps */
-    .work-step {
-        padding: 20px;
         gap: 15px;
     }
 
-    /* General sections */
-    section {
+    .work-step {
+        display: flex;
+        gap: 15px;
         padding: 20px;
     }
 
-    /* Buttons */
-    .button {
-        padding: 12px 20px;
+    .step-number {
+        flex-shrink: 0;
     }
-}
-@media (max-width: 1000px) {
-    body {
-        background-color: red !important;
+
+    .button {
+        display: inline-block;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
